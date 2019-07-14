@@ -2,14 +2,14 @@
 function fibonacci(num) {
   let a = 0,
     b = 1;
-  console.log(a);
-  console.log(b);
+  var fib = [a, b];
   for (let i = 2; i < num; i++) {
     c = a + b;
-    console.log(c);
+    fib.push(c);
     a = b;
     b = c;
   }
+  return fib;
 }
 
 console.log(fibonacci(10));
