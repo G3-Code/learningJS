@@ -12,4 +12,7 @@ function fibonacci(num) {
   return fib;
 }
 
-console.log(fibonacci(10));
+let evenOdd = num => (num % 2 === 0 ? `${num} is even` : `${num} is odd`);
+
+console.log(fibonacci(20));
+console.log(evenOdd(3));
